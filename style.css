@@ -1,0 +1,13 @@
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: right;
+  font-family: 'Syncopate';
+}
+
+#keywords {
+  display: block;
+  width: 600px;
+}
