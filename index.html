@@ -10,9 +10,14 @@
   </head>
   <body>
     <h1>CASE NOTES<br>TEXT ANALYZER</h1>
-    <input type="file" id="fileInput">
+    <input type="file" id="fileInput"><br>
     <input type="text" name="keywords" placeholder="Input Keywords Here (i.e. Jobs, Childcare, Improve)" id="keywords">
-    <button type="button" name="button" id="button">Generate Graphs</button>
+    <button type="button" name="button" id="graphGenerator">Generate Count</button>
+    <h3>Counts By Gender</h3>
+    <div id="counts">
+
+    </div>
+    <h3>Original Data</h3>
     <pre id="data"></pre>
     <script src="app.js"></script>
   </body>
