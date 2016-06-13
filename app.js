@@ -6,6 +6,7 @@ $(document).ready(function(){
   });
 
   $('#graphGenerator').on('click', function(e){
+    $("#countsSubtitle, #originalSubtitle, pre").css("display", "block");
     var fileData = d3.csv.parse($('#data').text());
 
     // COMMENT:
@@ -57,6 +58,16 @@ function generateGraphs(dataArray){
     var finalString = punctuationless.replace(/\s{2,}/g," ");
     //
     var count = countWords(finalString);
+    console.log(count);
+
+    // COMMENT: To sort by keys for an object
+    // SRC: http://stackoverflow.com/questions/9658690/is-there-a-way-to-sort-order-keys-in-javascript-objects
+    // Object.keys(temp1)
+    //   .sort()
+    //   .forEach(function(v, i) {
+    //       console.log(v, temp1[v]);
+    //    });
+
     var keywords = $('#keywords').val().toLowerCase().split(', ');
     var result = filterByKeyword(count,keywords);
     console.log(result);
