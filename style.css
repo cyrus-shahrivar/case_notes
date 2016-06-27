@@ -27,6 +27,7 @@ h1 {
 button#graphGenerator {
   font-size: 16px;
   margin-top: 20px;
+  margin-bottom: 15px;
 }
 
 #countsSubtitle, #originalSubtitle, pre {
